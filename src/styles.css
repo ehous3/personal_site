@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+.backgroundVideo {
+  background-attachment: fixed;
+}
+
+.rectangle {
+  margin-left:205px;
+  margin-top: 150px;
+  width: 80%;
+  height: 400px;
+  background: white;
+  border-radius: 15px;
+}
+
+.aboutDiv {
+  background: #ffccf2;
+  margin-top: 225px;
+  width: 100%;
+  height: 600px;
+}
+
+.titleDiv {
+  background: rgb(116,10,198);
+  opacity: 60%;
+  margin-top: 50px;
+  width: 10%;
+  height: 80px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.homeText {
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 3px;
+  font-size: 100px;
+  background: -webkit-linear-gradient(rgba(63,94,251,1) 0%, rgba(178,0,196,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homeParagraph {
+  text-align: center;
+  font-size: 20px;
+  padding-inline-start: 50px;
+  padding-inline-end: 50px;
+}
+
+.mySocials {
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 3px;
+  font-size: 50px;
+  background: -webkit-linear-gradient(rgba(63,94,251,1) 0%, rgba(178,0,196,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button1 {
+  background-color: transparent;
+  border: none;
+  margin-left: 330px;
+}
+
+.button1:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.button2 {
+  background-color: transparent;
+  border: none;
+  margin-left: 170px;
+}
+
+.button2:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}

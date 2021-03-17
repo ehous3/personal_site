@@ -1,0 +1,64 @@
+.NavbarItems {
+  background: rgb(116,10,198);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background: transparent;
+  font-family: 'Staatliches', cursive;
+  font-weight: bold;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.NavbarItems.active {
+  background: linear-gradient(90deg, rgba(116,10,198,1) 13%, rgba(44,0,237,1) 100%, rgba(251,251,251,0) 100%);
+}
+
+.navbar-logo {
+  color: #ffccf2;
+  justify-self: start;
+  margin-left: 40px;
+  cursor: default;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 3px;
+}
+
+.fa-stream {
+  margin-left: 0.7rem;
+  font-size: 1.7rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 20px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: left;
+}
+
+.nav-links {
+  color: #ffccf2;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+  background-color: #8a2be2;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+  opacity: 0.3;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}

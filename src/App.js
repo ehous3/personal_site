@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import Navbar from "./componets/navbar/Navbar";
-import bckgrndMov from "./componets/video/Background.webm";
+import bckgrndMov from "./componets/video/background.webm";
 
 
 export default function App() {

@@ -1,36 +1,53 @@
-import React, { useState } from "react";
-import { MenuItems } from "./MenuItems";
+import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./Navbar.css";
 
 class Navbar extends React.Component {
   state = { clicked: false };
 
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
+  scrollToTop = () => {
+    scroll.scrollToTop();
   };
 
   render() {
     return (
       <nav className="NavbarItems">
-        <h1 className="navbar-logo">
-          Ethan Houseworth<i className="fas fa-stream"></i>
+        <h1 className="navbar-logo" onClick={() => this.scrollToTop()}>
+          Ethan Houseworth
         </h1>
-        <div className="menu-icon" onClick={this.handleClick}>
-          <i
-            className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
-          ></i>
-        </div>
-        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
-          {MenuItems.map((item, index) => {
-            return (
-              <li key={index}>
-                <a className={item.cName} href={item.url}>
-                  {item.title}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        <Link
+            className="nav-links"
+            activeClass="nav-links"
+            to="div1"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+        >
+          About Me      
+        </Link>
+        <Link
+            className="nav-links"
+            activeClass="nav-links"
+            to="div2"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+        >
+          Soccer
+        </Link>
+        <Link
+            className="nav-links"
+            activeClass="nav-links"
+            to="div3"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+        >
+          Projects
+        </Link>
       </nav>
     );
   }

@@ -1,5 +1,4 @@
 .NavbarItems {
-  background: rgb(116,10,198);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -20,10 +19,17 @@
 .navbar-logo {
   color: #ffccf2;
   justify-self: start;
-  margin-left: 40px;
+  margin-right: 50%;
   cursor: default;
   font-family: 'Staatliches', cursive;
   letter-spacing: 3px;
+}
+
+.navbar-logo:hover{
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 .fa-stream {
@@ -34,7 +40,6 @@
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-gap: 20px;
   list-style: none;
   text-align: center;
   width: 70vw;
@@ -46,6 +51,10 @@
   color: #ffccf2;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  color: #ffccf2;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 3px;
+  font-size: 130%;
 }
 
 .nav-links:hover {
@@ -53,6 +62,11 @@
   border-radius: 4px;
   transition: all 0.2s ease-out;
   opacity: 0.3;
+  cursor: pointer;
+}
+
+.nav-links > .active {
+  border-bottom: 1px solid #333;
 }
 
 .nav-links-mobile {

@@ -52,10 +52,24 @@ export default function App() {
           </button>
         </a>
       </div>
-      <div className="aboutDiv">
-        <div className="titleDiv">
+      <div className="aboutDiv" id="div1">
+        <div>
           <h>
             About Me
+          </h>
+        </div>
+      </div>
+      <div className="soccerDiv" id="div2">
+        <div>
+          <h>
+            Soccer
+          </h>
+        </div>
+      </div>
+      <div className="projectsDiv" id="div3">
+        <div>
+          <h>
+            Projects
           </h>
         </div>
       </div>

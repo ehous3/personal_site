@@ -24,6 +24,18 @@
   height: 600px;
 }
 
+.soccerDiv {
+  background: #740ac6;
+  width: 100%;
+  height: 600px;
+}
+
+.projectsDiv {
+  background: #2c00ed;
+  width: 100%;
+  height: 600px;
+}
+
 .titleDiv {
   background: rgb(116,10,198);
   opacity: 60%;
